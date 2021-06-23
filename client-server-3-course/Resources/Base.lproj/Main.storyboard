@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dTX-sy-tTI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oDo-35-Kl8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.4"/>
@@ -76,7 +76,76 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqM-TZ-5en" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591" y="-604"/>
+            <point key="canvasLocation" x="293" y="-626"/>
+        </scene>
+        <!--Choose Fruit View Controller-->
+        <scene sceneID="y0U-0h-kVw">
+            <objects>
+                <viewController id="269-ld-vPY" customClass="ChooseFruitViewController" customModule="client_server_3_course" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wou-eO-aD1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chosen fruit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGB-Fm-c3E">
+                                <rect key="frame" x="20" y="145" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv1-tU-CBU">
+                                <rect key="frame" x="150" y="227" width="115" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="chouse fruit"/>
+                                <connections>
+                                    <action selector="chooseFruitAction:" destination="269-ld-vPY" eventType="touchUpInside" id="8pr-Af-x0d"/>
+                                    <segue destination="RCl-sb-hHZ" kind="show" identifier="showFruitsSegue" id="C6Y-JQ-ApO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h7e-ct-1UL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w7w-lV-xXg"/>
+                    <connections>
+                        <outlet property="fruitLabel" destination="VGB-Fm-c3E" id="4KS-9H-jcc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qym-DA-fnC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2113.0434782608695" y="-1307.1428571428571"/>
+        </scene>
+        <!--Fruits View Controller-->
+        <scene sceneID="vHt-B7-Sju">
+            <objects>
+                <viewController id="RCl-sb-hHZ" customClass="FruitsViewController" customModule="client_server_3_course" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tfN-3r-YAK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-mh-DOu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h30-gY-SIp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s3N-mh-DOu" firstAttribute="trailing" secondItem="h30-gY-SIp" secondAttribute="trailing" id="24E-Aj-bHO"/>
+                            <constraint firstItem="s3N-mh-DOu" firstAttribute="leading" secondItem="h30-gY-SIp" secondAttribute="leading" id="5y2-35-eAk"/>
+                            <constraint firstAttribute="bottom" secondItem="s3N-mh-DOu" secondAttribute="bottom" id="Td5-4j-2Qy"/>
+                            <constraint firstItem="s3N-mh-DOu" firstAttribute="top" secondItem="h30-gY-SIp" secondAttribute="top" id="m2h-dx-h2l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z1D-Z7-rAa"/>
+                    <connections>
+                        <outlet property="tableview" destination="s3N-mh-DOu" id="nzn-6j-sw2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03f-hf-cW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2873.913043478261" y="-1307.1428571428571"/>
         </scene>
         <!--Detail Account View Controller-->
         <scene sceneID="Ibe-mT-Ig1">
@@ -131,6 +200,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OxQ-hB-RFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="293" y="108"/>
+        </scene>
+        <!--Network View Controller-->
+        <scene sceneID="YVQ-7r-fVN">
+            <objects>
+                <viewController id="oDo-35-Kl8" customClass="NetworkViewController" customModule="client_server_3_course" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BOp-Ae-TCG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uE1-4a-KDk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFS-GL-zBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="-1875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6w4-Fx-LVA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eqQ-Qi-ut5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dRR-Gi-sDR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="269-ld-vPY" kind="relationship" relationship="rootViewController" id="UqR-Z5-tML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDJ-4q-fgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202.8985507246377" y="-1307.1428571428571"/>
         </scene>
     </scenes>
     <resources>
