@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5106EA3826877660001968EE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5106EA3726877660001968EE /* APIService.swift */; };
 		511428652682471A005ECE68 /* ChooseFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511428642682471A005ECE68 /* ChooseFruitViewController.swift */; };
 		5114286726824727005ECE68 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114286626824727005ECE68 /* FruitsViewController.swift */; };
 		5114286A268264B9005ECE68 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51142869268264B9005ECE68 /* NetworkViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5106EA3726877660001968EE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		511428642682471A005ECE68 /* ChooseFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFruitViewController.swift; sourceTree = "<group>"; };
 		5114286626824727005ECE68 /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
 		51142869268264B9005ECE68 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				51142869268264B9005ECE68 /* NetworkViewController.swift */,
+				5106EA3726877660001968EE /* APIService.swift */,
 			);
 			path = "Lesson-2";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				51E9C19A267F92D900438A8F /* Account.swift in Sources */,
 				51E9C185267F8A8300438A8F /* AccountViewController.swift in Sources */,
 				51E9C198267F92AB00438A8F /* DetailAccountViewController.swift in Sources */,
+				5106EA3826877660001968EE /* APIService.swift in Sources */,
 				51E9C181267F8A8300438A8F /* AppDelegate.swift in Sources */,
 				5114286A268264B9005ECE68 /* NetworkViewController.swift in Sources */,
 				51E9C183267F8A8300438A8F /* SceneDelegate.swift in Sources */,

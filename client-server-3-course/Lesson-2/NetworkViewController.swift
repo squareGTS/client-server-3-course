@@ -6,16 +6,44 @@
 //
 
 import UIKit
+//import Alamofire
+
+
 
 class NetworkViewController: UIViewController {
+    
+   // let apiService = APIService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        firstRequest()
-        secondRequest()
+       // apiService.getWeatherData(city: "Moscow") { value in
+       //     print(value as Any)
+        //}
+        
+        //firstRequest()
+        //secondRequest()
+        
+        //thirdRequest()
     }
     
+    
+    func thirdRequest() {
+        
+        //let paramters: Parameters = [
+      //  "q": "München,DE",
+       // "appid": "b1b15e88fa797225412429c1c50c122a1"
+      //  ]
+        
+        // AF.request("http://samples.openweathermap.org/data/2.5/forecast", parameters: parameters).responseJSON { response in
+        
+        // print(response.value)
+        
+    //}
+    
+}
+    
+    // POST request
     func secondRequest() {
         
         let configuration = URLSessionConfiguration.default
