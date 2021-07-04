@@ -11,6 +11,7 @@
 		511428652682471A005ECE68 /* ChooseFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511428642682471A005ECE68 /* ChooseFruitViewController.swift */; };
 		5114286726824727005ECE68 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114286626824727005ECE68 /* FruitsViewController.swift */; };
 		5114286A268264B9005ECE68 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51142869268264B9005ECE68 /* NetworkViewController.swift */; };
+		51771CB62690A669006B8EAE /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51771CB52690A669006B8EAE /* StorageViewController.swift */; };
 		51E9C181267F8A8300438A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9C180267F8A8300438A8F /* AppDelegate.swift */; };
 		51E9C183267F8A8300438A8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9C182267F8A8300438A8F /* SceneDelegate.swift */; };
 		51E9C185267F8A8300438A8F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9C184267F8A8300438A8F /* AccountViewController.swift */; };
@@ -27,6 +28,7 @@
 		511428642682471A005ECE68 /* ChooseFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFruitViewController.swift; sourceTree = "<group>"; };
 		5114286626824727005ECE68 /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
 		51142869268264B9005ECE68 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		51771CB52690A669006B8EAE /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		51E9C17D267F8A8300438A8F /* client-server-3-course.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-3-course.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E9C180267F8A8300438A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51E9C182267F8A8300438A8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			path = "Lesson-2";
 			sourceTree = "<group>";
 		};
+		51771CB42690A641006B8EAE /* Lesson-4 */ = {
+			isa = PBXGroup;
+			children = (
+				51771CB52690A669006B8EAE /* StorageViewController.swift */,
+			);
+			path = "Lesson-4";
+			sourceTree = "<group>";
+		};
 		51E9C174267F8A8300438A8F = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 				51E9C194267F91B600438A8F /* App */,
 				51E9C196267F91EE00438A8F /* Lesson-1 */,
 				5114286826825F8D005ECE68 /* Lesson-2 */,
+				51771CB42690A641006B8EAE /* Lesson-4 */,
 				51E9C195267F91CF00438A8F /* Resources */,
 			);
 			path = "client-server-3-course";
@@ -218,6 +229,7 @@
 				511428652682471A005ECE68 /* ChooseFruitViewController.swift in Sources */,
 				5114286726824727005ECE68 /* FruitsViewController.swift in Sources */,
 				51E9C19E267F9E8A00438A8F /* NotificationCenterViewController.swift in Sources */,
+				51771CB62690A669006B8EAE /* StorageViewController.swift in Sources */,
 				51E9C19A267F92D900438A8F /* Account.swift in Sources */,
 				51E9C185267F8A8300438A8F /* AccountViewController.swift in Sources */,
 				51E9C198267F92AB00438A8F /* DetailAccountViewController.swift in Sources */,
